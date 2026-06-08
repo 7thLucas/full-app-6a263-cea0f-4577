@@ -1,0 +1,68 @@
+<style>
+  .mode-landscape .sl-foundation-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-foundation-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-foundation-left {
+    width: 58%;
+  }
+  .mode-landscape .sl-foundation-right {
+    width: 42%;
+  }
+  .mode-portrait .sl-foundation-left {
+    width: 100%;
+  }
+  .mode-portrait .sl-foundation-right {
+    width: 100%;
+    height: 35%;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-foundation-layout flex w-full h-full">
+
+    <!-- Left: Problem & Solution -->
+    <div class="sl-foundation-left flex flex-col justify-center p-12 gap-10">
+
+      <!-- The Problem -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-1 rounded-full" style="background-color: #F59E0B;"></div>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color: #F59E0B;">The Problem</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-3" style="color: #1e293b;">Hiring decisions built on gut feelings</h2>
+        <p class="text-base leading-relaxed" style="color: #475569;">
+          Most interview feedback lives in scattered notes, Slack messages, and half-remembered impressions. Without structured data, teams default to subjective hunches — leading to inconsistent evaluations, hidden bias, and slow hiring loops that lose top candidates.
+        </p>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-16 h-px" style="background-color: #e2e8f0;"></div>
+
+      <!-- The Solution -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-1 rounded-full" style="background-color: #10B981;"></div>
+          <span class="text-xs font-bold uppercase tracking-widest" style="color: #10B981;">The Solution</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-3" style="color: #1e293b;">Structure, score, and compare — automatically</h2>
+        <p class="text-base leading-relaxed" style="color: #475569;">
+          Interview Analyzer captures every conversation, transcribes it, and applies AI-powered analysis with customizable rubrics. Hiring managers get normalized scorecards, side-by-side comparisons, and bias indicators — turning interviews into measurable, fair, team-wide data.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-foundation-right flex items-center justify-center p-8" style="background-color: #F8FAFC;">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=Split%20concept%20illustration%20left%20side%20chaotic%20scattered%20sticky%20notes%20and%20question%20marks%20right%20side%20clean%20organized%20scorecard%20dashboard%20with%20green%20checkmarks%20minimal%20flat%20style%20indigo%20and%20emerald%20tones"
+        alt="From chaos to clarity"
+        class="w-full h-full object-contain rounded-2xl"
+      />
+    </div>
+
+  </div>
+</section>
