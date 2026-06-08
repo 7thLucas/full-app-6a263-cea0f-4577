@@ -1,0 +1,62 @@
+<style>
+  .mode-landscape .sl-cover-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-cover-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-cover-left {
+    width: 55%;
+  }
+  .mode-landscape .sl-cover-right {
+    width: 45%;
+  }
+  .mode-portrait .sl-cover-left {
+    width: 100%;
+  }
+  .mode-portrait .sl-cover-right {
+    width: 100%;
+    height: 40%;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-cover-layout flex w-full h-full">
+
+    <!-- Left: Content Column -->
+    <div class="sl-cover-left flex flex-col justify-between p-12">
+      <div>
+        <div class="flex items-center gap-2 mb-6">
+          <div class="w-2 h-2 rounded-full" style="background-color: #4F46E5;"></div>
+          <span class="text-xs font-semibold uppercase tracking-widest" style="color: #4F46E5;">Interview Analyzer</span>
+        </div>
+        <h1 class="text-5xl font-extrabold leading-tight" style="color: #1e293b;">
+          Every Interview,<br/>
+          <span style="color: #4F46E5;">Measured.</span>
+        </h1>
+        <p class="mt-6 text-lg leading-relaxed" style="color: #475569; max-width: 420px;">
+          Transform unstructured conversations into structured, scorable candidate evaluations — reducing bias, saving time, and elevating every hiring decision.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual Anchor -->
+    <div class="sl-cover-right relative flex items-center justify-center overflow-hidden rounded-l-3xl" style="background: linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%);">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=Minimal%20flat%20illustration%20of%20a%20digital%20dashboard%20with%20interview%20scorecards%20and%20candidate%20comparison%20charts%20on%20a%20clean%20indigo%20background%20professional%20modern%20style"
+        alt="Interview analytics dashboard"
+        class="w-4/5 rounded-2xl shadow-2xl"
+        style="opacity: 0.9;"
+      />
+      <div class="absolute bottom-6 right-6 flex gap-2">
+        <span class="px-3 py-1 rounded-full text-xs font-medium text-white" style="background-color: rgba(255,255,255,0.2);">AI-Powered</span>
+        <span class="px-3 py-1 rounded-full text-xs font-medium text-white" style="background-color: rgba(255,255,255,0.2);">Bias-Aware</span>
+      </div>
+    </div>
+
+  </div>
+</section>
